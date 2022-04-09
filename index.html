@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fontawesome -->
+	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" rel="stylesheet"> 
+    <!-- <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/regular.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/solid.min.css" rel="stylesheet"> -->      
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" rel="stylesheet"> 
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Booki</title>
+
+    <meta name="description" content="Grâce à Booki, trouvez des hébergements et des activités dans la ville de votre choix et de votre budget. Planifiez votre séjour pour des vacances de rêve." />
+</head>
+<body>
+
+    <!------------------------------------ HEADER --------------------------------------->
+    <header>
+        <img id="header-logo" src="assets/logo/Booki@3x.png" alt="Logo de l'agence">
+        <nav id="header-nav">
+            <ul id="header-nav-ul">
+                <li id="header-nav-li"><a href="">Hébergements</a></li>
+                <li id="header-nav-li"><a href="">Activités</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!------------------------------------ MAIN --------------------------------------->
+
+    <main>
+
+        <!------------------------------------ SECTION SEARCH-FORM --------------------------------------->
+        <section id="section-form-search-filters">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+
+            <!-- <form method="post" action="">
+                <div id="form-search-icon-input">
+                    <span id="form-search-icon-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <input type="search" id="form-search-input" name="search" placeholder="Marseille, France">
+                    <input type="submit" value="Rechercher" id="form-search-button">
+                    <span id="form-search-icon-glass">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+            </form> -->
+
+            <form method="post" action="">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="search" id="form-search-input" name="search" placeholder="Marseille, France">
+                <input type="submit" value="Rechercher" id="form-search-button">
+                <i class="fas fa-search"></i>
+            </form>
+
+            <div id="filters">
+                <p>Filtres</p>
+                <div>
+                    <i class="fas fa-money-bill-wave"></i>
+                    <button class="filters-button">Économique</button>
+                </div>
+                <button class="filters-button"><i class="fas fa-child"></i>Familial</button>
+                <button class="filters-button"><i class="fas fa-heart"></i>Romantique</button>
+                <button class="filters-button"><i class="fas fa-dog"></i>Animaux autorisés</button>
+            </div>
+            
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            
+        </section>
+
+
+
+        <section id="filtres">
+
+        </section>
+        
+        <section id="conteneurs">
+            <div id="conteneurs-hebergements-marseille">
+
+            </div>
+
+            <div id="conteneurs-populaires">
+
+            </div>
+        </section>
+
+        <section id="activites-marseille">
+
+        </section>
+
+    </main>
+    
+
+
+    <footer>
+        <div id="footer-a-propos">
+
+        </div>
+
+        <div id="footer-hebergements">
+
+        </div>
+
+        <div id="footer-assistance">
+
+        </div>
+    </footer>
+</body>
+</html>
