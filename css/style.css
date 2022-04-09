@@ -54,20 +54,19 @@ header{
     padding:0;
     justify-content: flex-end;     
 }
-#header-nav-ul li{
+.header-nav-li{
     list-style: none;
     padding:40px;
     text-align: center;
     border-top:solid white;
 }
-#header-nav-li a{
-    padding:40px;
-    text-align: center;
-    border-top:solid white;
-}
-#header-nav-li a:hover{
+.header-nav-li:hover{
     color:#0065FC;
     border-top:solid 3px #0065FC;
+}
+.header-nav-li a:hover{
+    color:#0065FC;
+    background-color: white;
 }
 
 /************** FORM SEARCH + FILTERS *************/
@@ -161,11 +160,11 @@ i.fa-search{
     /* Header */
         header{display:flex;flex-direction: column;align-items: center;margin:10px;}
         #header-logo{width:127px;}
-        #header-nav, #header-nav-li {width: 100%;}
+        #header-nav, .header-nav-li {width: 100%;}
         #header-nav-ul{margin:0;justify-content: space-evenly;}
-        #header-nav-ul li{margin:0;border-bottom:solid 3px #F2F2F2;}
-        #header-nav-li a:hover{border-top:solid white;}
-        #header-nav-ul li:hover{border-bottom:solid 3px #0065FC;border-top:solid white;color:#0065FC;}
+        .header-nav-li{margin:0;border-bottom:solid 3px #F2F2F2;}
+        .header-nav-li:hover{border-top:solid white;}
+        .header-nav-li:hover{border-bottom:solid 3px #0065FC;border-top:solid white;color:#0065FC;}
     
     /* Form search */
         form{width:80%;}
