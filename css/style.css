@@ -69,30 +69,32 @@ header{
     background-color: white;
 }
 
-/************** FORM SEARCH + FILTERS *************/
+/************** SECTION FORM SEARCH + FILTERS *************/
     /******** Section *********/
-#section-form-search-filters{
+.section-form-search-filters{
     display:flex;
     flex-direction:column;
     align-items: space-around;
 }
         /******* Form search*******/
-#section-form-search-filters form{
+.section-form-search-filters form{
     width:40%;
     display:flex;
     flex-direction:row;
     align-items: center;
     justify-content: flex-start;
     margin:15px 0;
+
 }
             /**** Icon location ****/
 i.fa-map-marker-alt{
+    flex-grow:1;
+    flex-shrink: 0;
+    padding:23px;
     text-align:center;
     font-size: 1.2em;
-    padding:23px;
     border-radius:22px 0 0 22px;
     background-color: #F2F2F2;
-    flex-grow:1;
 }
             /**** Input : search + submit ****/
 #form-search-input, #form-search-button{
@@ -103,17 +105,19 @@ i.fa-map-marker-alt{
 }
 #form-search-input{
     flex-grow:2;
+    padding:21px 0px 21px 20px;
     background-color: white;
     color:black;
     border:solid 2px #F2F2F2;
-    padding:21px 0px 21px 20px;
+    border-left:none;
 }
 #form-search-input::placeholder{
     opacity: 1;
 }
 #form-search-button{
-    padding:22px;
     flex-grow:1;
+    flex-shrink: 0;
+    padding:22px;
     color:white;
     background-color: #0065FC;
     border-radius:0 22px 22px 0;
@@ -122,32 +126,75 @@ i.fa-map-marker-alt{
 i.fa-search{
     display:none;
 }
-
         /******* Filters*******/
-#filters{
-    width:80%;
+.filters{
+    /* width:80%; */
     display:flex;
     flex-flow: row;
-    justify-content: space-between;
+    flex-wrap:wrap;
+    justify-content: flex-start;
     align-items: center;
 }
-#filters p{
+.filters p{
     font-weight: bold;
+    margin-right:40px;
 }
 .filters-button{
-    padding:15px 25px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:20px 0;
+}
+            /******* Buttons*******/
+.filters-button-button{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 20px;
     font-weight: bold;
     background-color: white;
+    border:none;
     border:solid 3px #F2F2F2;
     border-radius:40px;
+    border-left-style: none;
+    align-items: center;
+    margin:10px 0;
+    margin-right:20px;
 }
-#filters i{
-    padding:10px;
+                /******* Icons buttons*******/
+.filters-button-icon i{
+    padding:19px;
+    margin-right:20px;
+    font-size: 1.5rem;
     color:#0065FC;
     background-color: #DEEBFF;
+    border-radius:100%;
+    text-align:center;
+}
+
+
+
+
+            /******* Informations*******/
+                        /******* Paragraph informations*******/
+/* .filters-informations{
+    font-size: 12px;
+} */
+                        /******* Icon informations*******/
+.fa-info{
+    padding: 10px 15px;
+    font-size: 1rem;
+    color:#0065FC;
+    background-color: white;
+    border:1px solid #DEEBFF;
     border-radius:30px;
     text-align:center;
 }
+
+
+/************** SECTION FORM SEARCH + FILTERS *************/
+
 
 
 
@@ -167,15 +214,22 @@ i.fa-search{
         .header-nav-li:hover{border-bottom:solid 3px #0065FC;border-top:solid white;color:#0065FC;}
     
     /* Form search */
-        form{width:80%;}
+        form{width:100%;}
         #form-search-input{overflow:hidden;}
         #form-search-button{display:none;}
-        i.fa-search{flex-grow:1;display:inline-block;text-align:center;color:white;background-color:#0065FC;padding:23px 20px;border-radius:22px;position:relative;right:30px;}
-}
+        i.fa-search{flex-grow:1;flex-shrink:0;display:inline-block;text-align:center;color:white;background-color:#0065FC;padding:23px 20px;border-radius:22px;position:relative;right:30px;}
+        
+    /* Filters */
+        #filters{display:flex;flex-direction: column;align-items: flex-start;margin-top:20px;}
+    }
 
 @media (min-width: 769px) and (max-width: 991px){ /*tablettes*/
         /* Form search */
         i.fa-search{display:none;}
+
+        /* Filters */
+        #filters{margin-top:20px;}
+
 }
 
 @media (min-width: 992px){ /*écrans ordinateurs*/
