@@ -220,38 +220,49 @@ i.fa-search{
     flex:1;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     /* flex-wrap: wrap; */
 }
 .hebergements-marseille-articles-article{
-    width: 33%;
-    height: auto;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     /* max-width: 345px;
     max-height: 277px; */
     /* max-width: 345px; */
     /* min-height: 200px; */
     margin: 5% 2%;
-    padding: 5px;
+    padding: 0.4%;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 5px 10px 8px 10px #F2F2F2;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
 }
 .hebergements-marseille-articles-article img{
     width: 100%;
-    height: 105px;
+    height: 55%;
     border-radius: 17px 17px 0 0;
     object-fit: cover;
+    padding-bottom:5%;
 }
 .hebergements-marseille-article-title-body-icons{
-    padding:5%;
+    width: 100%;
+    height: 30%;
+    padding:0 3%;
 }
 .hebergements-marseille-articles-article p {
     font-size: 14px;
-    padding:5px 0;
+    padding:2% 0;
 }
 .hebergements-marseille-articles-article .fa-star{
     font-size: 0.75em;
     color:#0065FC;
 }
+article.hebergements-marseille-articles-article:nth-child(1) > a:nth-child(1) > div:nth-child(2) > div:nth-child(3) > i:nth-child(5) {
+    color: #F2F2F2;
+}
+   
 
         /******** ASIDE LES PLUS POPULAIRES *********/
 #les-plus-populaires{
@@ -283,12 +294,13 @@ i.fa-search{
         #filters{display:flex;flex-direction: column;align-items: flex-start;margin-top:20px;}
     
     /* Section Hébergements à Marseille*/
-    #section-hebergements-populaires{display:flex; flex-direction:column-reverse;}
-    #hebergements-marseille{background-color: white;}
-    #les-plus-populaires{background-color: #F2F2F2;}
-    .hebergements-marseille-articles-article{width:100%;}
-    .hebergements-marseille-articles{display:flex; flex-direction:column;}
-    #hebergements-marseille, #les-plus-populaires{width: 100%;}
+        #section-hebergements-populaires{display:flex; flex-direction:column-reverse;}
+        #hebergements-marseille{background-color: white;}
+        #les-plus-populaires{background-color: #F2F2F2;}
+        .hebergements-marseille-articles-article{width:100%;}
+        .hebergements-marseille-articles{display:flex; flex-direction:column;}
+        #hebergements-marseille, #les-plus-populaires{width: 100%;}
+        .hebergements-marseille-articles-article img{ height: 160px;}
     
 }
 
