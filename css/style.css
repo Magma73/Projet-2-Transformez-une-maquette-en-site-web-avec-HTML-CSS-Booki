@@ -16,7 +16,7 @@ body{
     text-align: left;
 }
 main{
-    margin:1.5%;
+    margin:15px 67px;
 }
 a{
     text-decoration: none;
@@ -216,12 +216,14 @@ i.fa-search{
 #section-hebergements-populaires{
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin:1.5% 0;
 }
 
         /******** SECTION HÉBERGEMENTS À MARSEILLE *********/
 #hebergements-marseille{
-    flex: 66%;
-    margin: 2.5% 0.5%;
+    width: 65%;
+    /* margin: 2.5% 1.5% 2.5% 0.5%; */
     padding: 3% 1.5%;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -238,20 +240,20 @@ i.fa-search{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 5% 2%;
+    margin: 3% 2% 1% 2%;
     padding: 6px;
     background-color: white;
     border-radius: 22px;
     box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
 }
-.hebergements-marseille-articles-article:hover{
+.hebergements-marseille-articles-article:hover, .les-plus-populaires-articles-article:hover{
     box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.25);
     transition: all 0.5s ease-out;
     transform: scale(1.08);
 }
 .hebergements-marseille-articles-article img{
     width: 100%;
-    height: 105px;
+    height: 152px;
     border-radius: 17px 17px 0 0;
     object-fit: cover;
     /* padding-bottom:5%; */
@@ -274,17 +276,20 @@ i.fa-search{
 .hebergements-marseille-articles-article .fa-star{
     font-size: 0.6em;
     color:#0065FC;
-    margin-right: 0.5%;;
+    margin-right: 0.5%;
 }
 article.hebergements-marseille-articles-article:nth-child(1) > a:nth-child(1) > div:nth-child(2) > div:nth-child(3) > i:nth-child(5),
 article.hebergements-marseille-articles-article:nth-child(3) > a:nth-child(1) > div:nth-child(2) > div:nth-child(3) > i:nth-child(5),
 article.hebergements-marseille-articles-article:nth-child(4) > a:nth-child(1) > div:nth-child(2) > div:nth-child(3) > i:nth-child(4),
 article.hebergements-marseille-articles-article:nth-child(4) > a:nth-child(1) > div:nth-child(2) > div:nth-child(3) > i:nth-child(5),
-article.hebergements-marseille-articles-article:nth-child(5) > a:nth-child(1) > div:nth-child(2) > div:nth-child(3) > i:nth-child(5) {
+article.hebergements-marseille-articles-article:nth-child(5) > a:nth-child(1) > div:nth-child(2) > div:nth-child(3) > i:nth-child(5),
+article.les-plus-populaires-articles-article:nth-child(2) > a:nth-child(1) > div:nth-child(2) > div:nth-child(2) > i:nth-child(5),
+article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div:nth-child(2) > div:nth-child(2) > i:nth-child(5) {
     color: #d9d9d9;
 }
 #hebergements-marseille-more {
     margin-left: 2%;
+    margin-top: 3%;
     border: none;
     background-color: #F2F2F2;
     font-size: 18px;
@@ -297,9 +302,77 @@ article.hebergements-marseille-articles-article:nth-child(5) > a:nth-child(1) > 
 
         /******** ASIDE LES PLUS POPULAIRES *********/
 #les-plus-populaires{
-    flex: 33%;
+    width: 31%;
+    padding:60px 54px 45px 49px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
 }
-
+#les-plus-populaires-title-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;  
+}
+#les-plus-populaires-title-icon h2 {
+    margin-bottom: 34px;
+}
+.fa-chart-line {
+    font-size: 1.2em;
+}
+.les-plus-populaires-articles{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.les-plus-populaires-articles-article{
+    display: flex;
+    flex-direction: row; 
+    width:100%;
+    margin-bottom:43px;
+    padding: 7px;
+    /*padding-right: 10%; */
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
+}
+.les-plus-populaires-articles-article > a {
+    display: flex;
+    width:100%;
+}
+.les-plus-populaires-articles-article-img{
+    width: 173px;
+    height: 184px;
+}
+.les-plus-populaires-articles-article img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+/* article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > img:nth-child(1) {
+    width: 80%;
+} */
+.les-plus-populaires-article-title-body-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3.5% 0% 3.5% 5%;
+    padding-right: 13%;
+}
+.les-plus-populaires-article-title-body-icons p{
+    font-size: 15px;
+    padding:7px 0;
+}
+.les-plus-populaires-icons{
+    display: flex;
+    flex-direction: row;
+}
+.les-plus-populaires-icons .fa-star{
+    font-size: 0.6em;
+    color:#0065FC;
+    margin-right: 0.5%;
+}
 
 /*** MEDIA QUERIES ***/
 @media (max-width: 768px){ /*mobiles*/
