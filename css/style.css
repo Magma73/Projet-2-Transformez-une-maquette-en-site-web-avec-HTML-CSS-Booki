@@ -16,7 +16,7 @@ body{
     text-align: left;
 }
 main{
-    margin:30px;
+    margin:1.5%;
 }
 a{
     text-decoration: none;
@@ -27,10 +27,11 @@ h1{
     font-size: 1.7em!important;
 }
 h2{
-    font-size: 25px;
+    font-size: 1.2em;
+    margin-left: 2%;
 }
 h3{
-    font-size: 16px;
+    font-size: 0.8em;
 }
 p{
     /* margin:5px 0; */
@@ -51,18 +52,21 @@ header{
 }
     /******** Navigation/menu *********/
 #header-nav{
-    width: 100%;
+    flex: 100%;
 }
 #header-nav-ul{
     display:flex;
     flex-direction: row;
-    margin:0 30px;
-    padding:0;
+    /* margin:0 30px;
+    padding:0; */
     justify-content: flex-end;     
 }
-.header-nav-li{
+#header-nav-ul li{
     list-style: none;
     padding:40px;
+}
+.header-nav-li{
+    padding:37px;
     text-align: center;
     border-top:solid white;
 }
@@ -84,18 +88,16 @@ header{
 }
         /******* Form search*******/
 .section-form-search-filters form{
-    width:40%;
+    margin:15px 0;
+    margin-right: 65%;
     display:flex;
     flex-direction:row;
     align-items: center;
     justify-content: flex-start;
-    margin:15px 0;
-
 }
             /**** Icon location ****/
 i.fa-map-marker-alt{
-    flex-grow:1;
-    flex-shrink: 0;
+    flex: 0%;
     padding:23px;
     text-align:center;
     font-size: 1.2em;
@@ -110,7 +112,7 @@ i.fa-map-marker-alt{
     border:none;
 }
 #form-search-input{
-    flex-grow:2;
+    flex: 52%;
     padding:21px 0px 21px 20px;
     background-color: white;
     color:black;
@@ -121,8 +123,7 @@ i.fa-map-marker-alt{
     opacity: 1;
 }
 #form-search-button{
-    flex-grow:1;
-    flex-shrink: 0;
+    flex: 20%;
     padding:22px;
     color:white;
     background-color: #0065FC;
@@ -134,7 +135,6 @@ i.fa-search{
 }
         /******* Filters*******/
 .filters{
-    /* width:80%; */
     display:flex;
     flex-flow: row;
     flex-wrap:wrap;
@@ -157,7 +157,7 @@ i.fa-search{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-right: 20px;
+    padding-right: 30px;
     font-weight: bold;
     background-color: white;
     border:none;
@@ -167,17 +167,29 @@ i.fa-search{
     align-items: center;
     margin:10px 0;
     margin-right:20px;
+} 
+.filters-button-button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
+    color:#0065FC;
 }
                 /******* Icons buttons*******/
-.filters-button-icon i{
-    padding:19px;
+.filters-button-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin: -2px;
     margin-right:20px;
+    padding:17px;
     font-size: 1.5rem;
     color:#0065FC;
     background-color: #DEEBFF;
     border-radius:100%;
     text-align:center;
 }
+
 
 
 
@@ -208,87 +220,115 @@ i.fa-search{
 
         /******** SECTION HÉBERGEMENTS À MARSEILLE *********/
 #hebergements-marseille{
-    width: 66%;
+    flex: 66%;
     margin: 2.5% 0.5%;
-    padding: 3%;
+    padding: 3% 1.5%;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
             /******* Articles*******/
 .hebergements-marseille-articles{
-    width: 100%;
-    flex:1;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 .hebergements-marseille-articles-article{
-    width: 300px;
-    height: 250px;
+    flex: 28%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* max-width: 345px;
-    max-height: 277px; */
-    /* max-width: 345px; */
-    /* min-height: 200px; */
     margin: 5% 2%;
-    padding: 0.45%;
+    padding: 6px;
     background-color: white;
     border-radius: 22px;
     box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
 }
+.hebergements-marseille-articles-article:hover{
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s ease-out;
+    transform: scale(1.08);
+}
 .hebergements-marseille-articles-article img{
     width: 100%;
-    height: 55%;
+    height: 105px;
     border-radius: 17px 17px 0 0;
     object-fit: cover;
-    padding-bottom:5%;
+    /* padding-bottom:5%; */
 }
 .hebergements-marseille-article-title-body-icons{
-    width: 100%;
-    height: 30%;
-    padding:0 3%;
+    /* width: 100%;
+    height: 30%; */
+    padding:0 3.5%;
+    margin-top: 3%;
+    margin: 2.5% 0;
 }
 .hebergements-marseille-articles-article p {
-    font-size: 14px;
-    padding:2% 0;
+    font-size: 15px;
+    padding:7px 0;
+}
+.hebergements-marseille-icons{
+    display: flex;
+    flex-direction: row;
 }
 .hebergements-marseille-articles-article .fa-star{
-    font-size: 0.75em;
+    font-size: 0.6em;
+    color:#0065FC;
+    margin-right: 0.5%;;
+}
+article.hebergements-marseille-articles-article:nth-child(1) > a:nth-child(1) > div:nth-child(2) > div:nth-child(3) > i:nth-child(5),
+article.hebergements-marseille-articles-article:nth-child(3) > a:nth-child(1) > div:nth-child(2) > div:nth-child(3) > i:nth-child(5),
+article.hebergements-marseille-articles-article:nth-child(4) > a:nth-child(1) > div:nth-child(2) > div:nth-child(3) > i:nth-child(4),
+article.hebergements-marseille-articles-article:nth-child(4) > a:nth-child(1) > div:nth-child(2) > div:nth-child(3) > i:nth-child(5),
+article.hebergements-marseille-articles-article:nth-child(5) > a:nth-child(1) > div:nth-child(2) > div:nth-child(3) > i:nth-child(5) {
+    color: #d9d9d9;
+}
+#hebergements-marseille-more {
+    margin-left: 2%;
+    border: none;
+    background-color: #F2F2F2;
+    font-size: 18px;
+    font-weight: bold;
+}
+#hebergements-marseille-more:hover{
+    cursor:pointer;
     color:#0065FC;
 }
-article.hebergements-marseille-articles-article:nth-child(1) > a:nth-child(1) > div:nth-child(2) > div:nth-child(3) > i:nth-child(5) {
-    color: #F2F2F2;
-}
-   
 
         /******** ASIDE LES PLUS POPULAIRES *********/
 #les-plus-populaires{
-    width: 33%;
+    flex: 33%;
 }
 
 
 /*** MEDIA QUERIES ***/
 @media (max-width: 768px){ /*mobiles*/
     /* Main */
-        main{margin:60px;}
+        /* main{margin:1.5%;} */
 
     /* Header */
         header{display:flex;flex-direction: column;align-items: center;margin:10px;}
         #header-logo{width:127px;}
         #header-nav, .header-nav-li {width: 100%;}
         #header-nav-ul{margin:0;justify-content: space-evenly;}
+        #header-nav-ul li{flex:50%;}
+        /* #header-nav-ul li:hover{border-bottom:solid 3px #0065FC;} */
         .header-nav-li{margin:0;border-bottom:solid 3px #F2F2F2;}
         .header-nav-li:hover{border-top:solid white;}
         .header-nav-li:hover{border-bottom:solid 3px #0065FC;border-top:solid white;color:#0065FC;}
     
+    /* Main */
+        main{margin:0;}
+
+    /* Section Form search - Filters */
+    .section-form-search-filters{margin:4.5%;}
+
     /* Form search */
         form{width:100%;}
         #form-search-input{overflow:hidden;}
         #form-search-button{display:none;}
-        i.fa-search{flex-grow:1;flex-shrink:0;display:inline-block;text-align:center;color:white;background-color:#0065FC;padding:23px 20px;border-radius:22px;position:relative;right:30px;}
+        .section-form-search-filters form {margin-right: 0%;}
+        i.fa-search{flex:0%;display:inline-block;text-align:center;color:white;background-color:#0065FC;padding:23px 20px;border-radius:22px;position:relative;right:30px;}
         
     /* Filters */
         #filters{display:flex;flex-direction: column;align-items: flex-start;margin-top:20px;}
@@ -297,11 +337,19 @@ article.hebergements-marseille-articles-article:nth-child(1) > a:nth-child(1) > 
         #section-hebergements-populaires{display:flex; flex-direction:column-reverse;}
         #hebergements-marseille{background-color: white;}
         #les-plus-populaires{background-color: #F2F2F2;}
-        .hebergements-marseille-articles-article{width:100%;}
-        .hebergements-marseille-articles{display:flex; flex-direction:column;}
-        #hebergements-marseille, #les-plus-populaires{width: 100%;}
-        .hebergements-marseille-articles-article img{ height: 160px;}
+        .hebergements-marseille-articles{display:flex; flex-direction:column;margin-top:3%;}
+        .hebergements-marseille-articles-article{margin: 2% 3%;padding: 8px;}
+        .hebergements-marseille-articles-article img{ height: 219px;}
+        .hebergements-marseille-articles-article p {padding: 10px 0;}
+        h3 {font-size: 1.1em;}
+        .hebergements-marseille-articles-article .fa-star {font-size: 0.75em;}
     
+    /* Section Les plus populaires*/
+        #les-plus-populaires{background-color: #F2F2F2;}
+
+
+
+
 }
 
 
@@ -314,9 +362,19 @@ article.hebergements-marseille-articles-article:nth-child(1) > a:nth-child(1) > 
         #filters{margin-top:20px;}
 
     /* Section Hébergements à Marseille*/
-        #hebergements-marseille, #les-plus-populaires{width: 50%;}
-        .hebergements-marseille-articles{display:flex; flex-direction:column;}
-        .hebergements-marseille-articles-article{width: 300px;height: 210px;}
+        #section-hebergements-populaires{display:flex; flex-direction:column-reverse;}
+        #hebergements-marseille{background-color: white;}
+        #les-plus-populaires{background-color: #F2F2F2;}
+        .hebergements-marseille-articles{display:flex; flex-direction:column;margin-top:3%;}
+        .hebergements-marseille-articles-article{margin: 2% 3%;padding: 8px;}
+        .hebergements-marseille-articles-article img{ height: 270px;}
+        .hebergements-marseille-articles-article p {padding: 10px 0;}
+        h3 {font-size: 1.1em;}
+        .hebergements-marseille-articles-article .fa-star {font-size: 0.75em;}
+        
+    /* Section Les plus populaires*/
+        #les-plus-populaires{background-color: #F2F2F2;}
+    
     
 
 }
@@ -324,6 +382,17 @@ article.hebergements-marseille-articles-article:nth-child(1) > a:nth-child(1) > 
 @media (min-width: 992px) and (max-width: 1200px){ /*écrans ordinateurs*/
     /* Form search */
         .fa-search{display:none;}
+
+    /* Section Hébergements à Marseille*/
+        #hebergements-marseille{padding: 4% 3%;}
+        .hebergements-marseille-articles{display:flex; flex-direction:column;margin-top:3%;}
+        .hebergements-marseille-articles-article{margin: 2% 3%;padding: 8px;}
+        .hebergements-marseille-articles-article img{ height: 200px;}
+        h3 {font-size: 1.1em;}
+        .hebergements-marseille-articles-article .fa-star {font-size: 0.75em;}
+    
+    /* Section Les plus populaires*/
+        #les-plus-populaires{background-color: #F2F2F2;}
 
     /* Section Hébergements à Marseille*/
         /* .hebergements-marseille-articles-article{width: 300px;height: 220px;} */
