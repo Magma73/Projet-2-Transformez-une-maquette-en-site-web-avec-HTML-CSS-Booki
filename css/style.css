@@ -16,7 +16,7 @@ body{
     text-align: left;
 }
 main{
-    margin:15px 67px;
+    margin:0% 3.5%;
 }
 a{
     text-decoration: none;
@@ -28,7 +28,7 @@ h1{
 }
 h2{
     font-size: 1.2em;
-    margin-left: 2%;
+    margin: 0 0 1.3% 1.7%;
 }
 h3{
     font-size: 0.8em;
@@ -79,7 +79,7 @@ header{
     background-color: white;
 }
 
-/************** SECTION FORM SEARCH + FILTERS *************/
+/************** SECTION 1 : FORM SEARCH + FILTERS *************/
     /******** Section *********/
 .section-form-search-filters{
     display:flex;
@@ -211,25 +211,26 @@ i.fa-search{
 }
 
 
-/************** SECTION HÉBERGEMENTS À MARSEILLE + LES PLUS POPULAIRES *************/
+/************** SECTION 2 : "HÉBERGEMENTS À MARSEILLE" + "LES PLUS POPULAIRES" *************/
     /******** SECTION *********/
 #section-hebergements-populaires{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    margin:1.5% 0;
+    margin:1.9% 0;
 }
 
-        /******** SECTION HÉBERGEMENTS À MARSEILLE *********/
+        /******** Section 2.1 : "hébergements à Marseille" *********/
+            /******** Section *********/
 #hebergements-marseille{
-    width: 65%;
-    /* margin: 2.5% 1.5% 2.5% 0.5%; */
-    padding: 3% 1.5%;
+    width: 66%;
+    height:100%;
+    padding: 2.8% 2%;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
             /******* Articles*******/
-.hebergements-marseille-articles{
+#hebergements-marseille-articles{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -240,10 +241,10 @@ i.fa-search{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 3% 2% 1% 2%;
-    padding: 6px;
+    margin: 1.7%;
+    padding: 7px;
     background-color: white;
-    border-radius: 22px;
+    border-radius: 27px;
     box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
 }
 .hebergements-marseille-articles-article:hover, .les-plus-populaires-articles-article:hover{
@@ -251,24 +252,24 @@ i.fa-search{
     transition: all 0.5s ease-out;
     transform: scale(1.08);
 }
+                /******* Images*******/
 .hebergements-marseille-articles-article img{
     width: 100%;
     height: 152px;
-    border-radius: 17px 17px 0 0;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
-    /* padding-bottom:5%; */
 }
+                /******* Title + body + icons *******/
 .hebergements-marseille-article-title-body-icons{
-    /* width: 100%;
-    height: 30%; */
     padding:0 3.5%;
     margin-top: 3%;
-    margin: 2.5% 0;
+    margin: 3% 0;
 }
 .hebergements-marseille-articles-article p {
     font-size: 15px;
-    padding:7px 0;
+    padding:2% 0 2.5% 0;
 }
+                        /******* Icons *******/
 .hebergements-marseille-icons{
     display: flex;
     flex-direction: row;
@@ -287,9 +288,9 @@ article.les-plus-populaires-articles-article:nth-child(2) > a:nth-child(1) > div
 article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div:nth-child(2) > div:nth-child(2) > i:nth-child(5) {
     color: #d9d9d9;
 }
+            /******* Button*******/
 #hebergements-marseille-more {
-    margin-left: 2%;
-    margin-top: 3%;
+    margin: 4.4% 0 0 1.7%;
     border: none;
     background-color: #F2F2F2;
     font-size: 18px;
@@ -299,28 +300,26 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
     cursor:pointer;
     color:#0065FC;
 }
-
-        /******** ASIDE LES PLUS POPULAIRES *********/
+        /******** Section 2.2 : "les plus populaires" *********/
+            /******** Section *********/
 #les-plus-populaires{
     width: 31%;
-    padding:60px 54px 45px 49px;
+    height:100%;
+    padding:2.7% 2.9%;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
-#les-plus-populaires-title-icon {
+            /******* Title h2 + icon *******/
+#les-plus-populaires-title-h2-icon {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3%;  
-}
-#les-plus-populaires-title-icon h2 {
-    margin-bottom: 34px;
 }
 .fa-chart-line {
     font-size: 1.2em;
 }
-.les-plus-populaires-articles{
+            /******* Articles *******/
+#les-plus-populaires-articles{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -329,9 +328,8 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
     display: flex;
     flex-direction: row; 
     width:100%;
-    margin-bottom:43px;
+    margin:3% 0;
     padding: 7px;
-    /*padding-right: 10%; */
     background-color: white;
     border-radius: 25px;
     box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
@@ -340,30 +338,30 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
     display: flex;
     width:100%;
 }
+                /******* Images*******/
 .les-plus-populaires-articles-article-img{
-    width: 173px;
-    height: 184px;
+    display:flex; 
 }
 .les-plus-populaires-articles-article img{
-    width: 100%;
-    height: 100%;
+    width: 173px;
+    height: 178px;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
 }
-/* article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > img:nth-child(1) {
-    width: 80%;
-} */
+                /******* Title + body + icons *******/
 .les-plus-populaires-article-title-body-icons {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width:100%;
     margin: 3.5% 0% 3.5% 5%;
     padding-right: 13%;
 }
 .les-plus-populaires-article-title-body-icons p{
     font-size: 15px;
-    padding:7px 0;
+    padding:5% 0;
 }
+                        /******* Icons *******/
 .les-plus-populaires-icons{
     display: flex;
     flex-direction: row;
