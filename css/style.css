@@ -14,6 +14,7 @@ body{
     font-size: 20px;
     color:black;
     text-align: left;
+    max-width:1920px;
 }
 main{
     margin:0% 3.5%;
@@ -63,12 +64,12 @@ header{
 }
 #header-nav-ul li{
     list-style: none;
-    padding:40px;
+    /* padding:40px 0px; */
 }
 .header-nav-li{
-    padding:37px;
+    padding:37px 0px;
     text-align: center;
-    border-top:solid white;
+    border-top:solid 0px;
 }
 .header-nav-li:hover{
     color:#0065FC;
@@ -313,6 +314,8 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
 #les-plus-populaires{
     width: 31%;
     padding: 2.7% 2.9% 1.6% 2.9%;
+    display: flex;
+    flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 26px;
 }
@@ -392,7 +395,7 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
         /* #header-nav-ul li:hover{border-bottom:solid 3px #0065FC;} */
         .header-nav-li{margin:0;border-bottom:solid 3px #F2F2F2;}
         .header-nav-li:hover{border-top:solid white;}
-        .header-nav-li:hover{border-bottom:solid 3px #0065FC;border-top:solid white;color:#0065FC;}
+        .header-nav-li a:hover{border-bottom:solid 3px #0065FC;border-top:solid white;color:#0065FC;}
     
     /* Main */
         main{margin:0;}
@@ -411,7 +414,10 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
         #filters{display:flex;flex-direction: column;align-items: flex-start;margin-top:20px;}
     
     /* Section 2 Hébergements à Marseille and Le plus populaire*/
+        #hebergements-marseille, #les-plus-populaires{width:100%;padding:8% 5%;}
+
         /* Section 2.1 Hébergements à Marseille*/
+            .hebergements-marseille-articles-article{width: 100%;}
             .hebergements-marseille-articles-article img {height: 229px;}
         
         /* Section 2.2 Les plus populaires*/
@@ -441,15 +447,10 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
 
         /* Section 2.1 Hébergements à Marseille*/
         #hebergements-marseille{background-color: white;}
-        #hebergements-marseille-articles{display:flex; flex-direction:column;margin: 3% 0;}
-        .hebergements-marseille-articles-article{width: 100%;}
-        .hebergements-marseille-articles-article img {height: 280px;}
-
     
         /* Section 2.2 Les plus populaires*/
         #les-plus-populaires{background-color: #F2F2F2;}
         .les-plus-populaires-articles-article {margin: 1.5% 0;}
-        .les-plus-populaires-articles-article img {width: 255px;height: 268px;}
 
 
     
