@@ -43,31 +43,37 @@ header{
     display:flex;
     flex-direction: row;
     align-items: center;
-    margin:0 40px;
+    margin:0 3.5%;
 }
     /******** Logo *********/
+#div-header-log{
+    width:8%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+}
 #header-logo{
     text-align: center;
-    width:125px;
+    width:49%;
     height:auto;
 }
     /******** Navigation/menu *********/
 #header-nav{
-    flex: 100%;
+    width:92%;
 }
 #header-nav-ul{
     display:flex;
     flex-direction: row;
-    /* margin:0 30px;
-    padding:0; */
+    padding:0;
     justify-content: flex-end;     
 }
 #header-nav-ul li{
     list-style: none;
-    /* padding:40px 0px; */
+    padding:40px 0px;
 }
 .header-nav-li{
-    padding:37px 0px;
+    padding:37px 30px;
     text-align: center;
     border-top:solid 0px;
 }
@@ -387,15 +393,13 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
 /*** MEDIA QUERIES ***/
 @media (max-width: 768px){ /*mobiles*/
     /* Header */
-        header{display:flex;flex-direction: column;align-items: center;margin:10px;}
-        #header-logo{width:127px;}
-        #header-nav, .header-nav-li {width: 100%;}
-        #header-nav-ul{margin:0;justify-content: space-evenly;}
-        #header-nav-ul li{flex:50%;}
-        /* #header-nav-ul li:hover{border-bottom:solid 3px #0065FC;} */
+        header{display:flex;flex-direction: column;align-items: center;margin:10px 0;}
+        #div-header-logo {text-align: center;}
+        #header-nav {width:100%;}
+        #header-nav-ul li {width: 50%; padding:0}
+        .header-nav-li {padding:37px 0px;display: flex;flex-direction:row;justify-content:center;}
         .header-nav-li{margin:0;border-bottom:solid 3px #F2F2F2;}
-        .header-nav-li:hover{border-top:solid white;}
-        .header-nav-li a:hover{border-bottom:solid 3px #0065FC;border-top:solid white;color:#0065FC;}
+        .header-nav-li:hover{border-top:0px;border-bottom:solid 3px #0065FC;color:#0065FC;}
     
     /* Main */
         main{margin:0;}
