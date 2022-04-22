@@ -419,27 +419,31 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
         #filters{display:flex;flex-direction: column;align-items: flex-start;margin-top:20px;}
     
     /* Section 2 Hébergements à Marseille and Le plus populaire*/
+        #section-hebergements-populaires{display:flex; flex-direction:column-reverse;}
         #hebergements-marseille, #les-plus-populaires{width:100%;padding:8% 5%;}
+        h3{font-size: 0.9em;}
+        .les-plus-populaires-title-body > p, .hebergements-marseille-article-title-body-icons > p{font-size: 17px;}
+        .hebergements-marseille-icons > .fa-star , .les-plus-populaires-icons> .fa-star {font-size: 0.75em;}
 
         /* Section 2.1 Hébergements à Marseille*/
+            #hebergements-marseille{background-color: white;}
             .hebergements-marseille-articles-article{width: 100%;}
             .hebergements-marseille-articles-article img {height: 229px;}
         
         /* Section 2.2 Les plus populaires*/
+            #les-plus-populaires{background-color: #F2F2F2;}
+            .les-plus-populaires-articles-article {margin: 1.5% 0;}
             .les-plus-populaires-articles-article img {width: 255px;height: 268px;}
 
 
 
-
-
 }
-@media (min-width: 769px){ 
+
+
+@media (min-width: 769px) and (max-width: 991px){ /*tablettes*/
     /* Form search */
         i.fa-search{display:none;}
 
-
-
-@media (max-width: 991px){ /*tablettes*/
     /* Filters */
         #filters{margin-top:20px;}
 
