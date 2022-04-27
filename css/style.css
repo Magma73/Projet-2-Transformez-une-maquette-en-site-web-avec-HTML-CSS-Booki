@@ -400,7 +400,7 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
 #activites-a-marseille-figcaptions{
     display: flex;
     flex-direction: row;
-    margin: 1.7% 0;
+    margin: 3% 0;
 }
 .activites-a-marseille-figcaptions-figcaption{
     flex:20%;
@@ -463,9 +463,8 @@ div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child
 
 
 
-
 /*** MEDIA QUERIES ***/
-@media (max-width: 768px){ /*mobiles*/
+@media (max-width: 768px){ /*mobiles */
     /* Header */
         header{display:flex;flex-direction: column;align-items: center;margin:10px 0;}
         #div-header-logo {text-align: center;}
@@ -508,15 +507,18 @@ div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child
             #les-plus-populaires{background-color: #F2F2F2;}
             .les-plus-populaires-articles-article {margin: 1.5% 0;}
 
-
-
+    /* Section 3 : Activités à Marseille */
+        #section-activites-a-marseille{margin:4.5%;}
+        #activites-a-marseille-figcaptions{margin:3% 0;}
+        #activites-a-marseille-figcaptions{flex-direction:column;}
+        .activites-a-marseille-figcaptions-figcaption img, div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1) > div:nth-child(1) > img:nth-child(1),div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(2) > div:nth-child(1) > img:nth-child(1),div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(2) > div:nth-child(1) > img:nth-child(1),div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(1) > div:nth-child(1) > img:nth-child(1){height: 271px;}
+        div.activites-a-marseille-figcaptions-figcaption:nth-child(2),div.activites-a-marseille-figcaptions-figcaption:nth-child(3), div.activites-a-marseille-figcaptions-figcaption:nth-child(4), div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1), div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(1) {margin: 0;}
+        .one-card, .two-cards{margin:2.5% 0!important;}
+        .one-card figcaption, .two-cards figcaption {padding: 3% 5%;}
 }
 
 
-@media (min-width: 769px) and (max-width: 991px){ /*tablettes*/
-    /* Form search */
-        i.fa-search{display:none;}
-
+@media (max-width: 992px){ /*tablettes*/
     /* Filters */
         #filters{margin-top:20px;}
 
@@ -533,26 +535,11 @@ div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child
         /* Section 2.2 Les plus populaires*/
         #les-plus-populaires{background-color: #F2F2F2;}
 
-
-
+    /* Section 3 : Activités à Marseille */
+        #section-activites-a-marseille{padding: 8% 5%;}
+        /* #activites-a-marseille-figcaptions{flex-direction:column;}
+        #activites-a-marseille-figcaptions-figcaption{flex-direction:row;} */
 }
-
-
-
-@media (min-width: 992px) and (max-width: 1200px){ /*écrans ordinateurs*/
-    /* Form search */
-        .fa-search{display:none;}
-
-    /* Section 2 Hébergements à Marseille and Le plus populaire*/
-        /* Section 2.1 Hébergements à Marseille*/
-        #hebergements-marseille{width:56%;}
-        .hebergements-marseille-articles-article {width: 48%;}
-    
-        /* Section 2.2 Les plus populaires*/
-        #les-plus-populaires{width:42%;}
-
-}
-
 
 
 
