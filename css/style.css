@@ -357,10 +357,11 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
 }
                 /******* Images*******/
 .les-plus-populaires-articles-article-img{
-    display:flex; 
+    display:flex;
+    flex:22%; 
 }
 .les-plus-populaires-articles-article img{
-    width: 173px;
+    width: 100%;
     height: 178px;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
@@ -372,6 +373,7 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
     justify-content: space-between;
     width:100%;
     margin: 3.5% 0% 3.5% 5%;
+    flex:42%;
 }
 .les-plus-populaires-article-title-body-icons p{
     font-size: 15px;
@@ -388,6 +390,78 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
     margin-right: 0.5%;
 }
 
+/************** SECTION 3 : "ACTIVITÉS À MARSEILLE" *************/
+    /******** SECTION *********/
+#section-activites-a-marseille{
+    display: flex;
+    flex-direction: column;
+}
+        /******** Figcaptions *********/
+#activites-a-marseille-figcaptions{
+    display: flex;
+    flex-direction: row;
+    margin: 1.7% 0;
+}
+.activites-a-marseille-figcaptions-figcaption{
+    flex:20%;
+    display:flex;
+    flex-direction: column;
+}
+.activites-a-marseille-figcaptions-figcaption img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 27px 27px 0 0;
+}
+div.activites-a-marseille-figcaptions-figcaption:nth-child(2),
+div.activites-a-marseille-figcaptions-figcaption:nth-child(3),
+div.activites-a-marseille-figcaptions-figcaption:nth-child(4) {
+    margin-left: 2%;
+}
+            /******** Cards *********/
+figure{
+    background-color:white;
+    border-radius: 27px;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
+}
+             /******** One card et Two cards *********/
+.one-card, .two-cards{
+    width: 100%;
+    flex:100%;
+    display:flex;
+    flex-direction: column;  
+}
+.one-card-img, .two-cards-img{
+    width: 100%;
+    flex:95%;
+}
+.one-card figcaption, .two-cards figcaption {
+    flex:5%;
+    padding: 5% 7%;
+}
+             /******** Two cards *********/
+div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1) > div:nth-child(1) > img:nth-child(1),
+div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(2) > div:nth-child(1) > img:nth-child(1) {
+    height: 241px;
+}
+div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(2) > div:nth-child(1) > img:nth-child(1),
+div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    height: 160px;
+}
+div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1),
+div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(1) {
+    margin-bottom: 10%;
+}
+div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1),
+div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(2) {
+    flex: 53%;
+}
+div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(2),
+div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(1)  {
+    flex: 37%;
+}
+
+
 
 
 /*** MEDIA QUERIES ***/
@@ -396,7 +470,7 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
         header{display:flex;flex-direction: column;align-items: center;margin:10px 0;}
         #div-header-logo {text-align: center;}
         #header-nav {width:100%;}
-        #header-nav-ul li {width: 50%; padding:0}
+        #header-nav-ul li {flex: 50%; padding:0}
         .header-nav-li {padding:37px 0px;display: flex;flex-direction:row;justify-content:center;}
         .header-nav-li{margin:0;border-bottom:solid 3px #F2F2F2;}
         .header-nav-li:hover{border-top:0px;border-bottom:solid 3px #0065FC;color:#0065FC;}
@@ -433,7 +507,6 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
         /* Section 2.2 Les plus populaires*/
             #les-plus-populaires{background-color: #F2F2F2;}
             .les-plus-populaires-articles-article {margin: 1.5% 0;}
-            .les-plus-populaires-articles-article img {width: 255px;height: 268px;}
 
 
 
@@ -459,10 +532,8 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
     
         /* Section 2.2 Les plus populaires*/
         #les-plus-populaires{background-color: #F2F2F2;}
-        .les-plus-populaires-articles-article {margin: 1.5% 0;}
 
 
-    
 
 }
 
@@ -479,7 +550,6 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
     
         /* Section 2.2 Les plus populaires*/
         #les-plus-populaires{width:42%;}
-        .les-plus-populaires-articles-article img{width: 145px;}
 
 }
 
