@@ -496,10 +496,10 @@ footer{
         main{margin:0;}
 
     /* Section 1 Form search - Filters */
-        .section-form-search-filters{margin:4.5%;}
+        #section-form-search-filters{margin:4.5%;}
 
         /* Form search */
-            .section-form-search-filters > form {width: 100%;}
+            #section-form-search-filters > form {width: 100%;}
             #form-search-input{flex: 69%;}
             #form-search-input{overflow:hidden;}
             i.fa-map-marker-alt{flex: 15.5%;}
