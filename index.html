@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- fontawesome -->
@@ -42,21 +43,21 @@
     <main>
 
         <!------------------------------------ SECTION 1 : SEARCH-FORM --------------------------------------->
-        <section class="section-form-search-filters">
+        <section id="section-form-search-filters">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
-            <form method="post" action="">
+            <form method="post">
                 <i class="fas fa-map-marker-alt"></i>              
                 <input type="search" id="form-search-input" name="search" placeholder="Marseille, France">
                 <input type="submit" value="Rechercher" id="form-search-button">
                 <i class="fas fa-search"></i>
             </form>
 
-            <div class="filters">
+            <div id="filters">
                 <p>Filtres</p>
 
-                <div class="filters-button">
+                <div id="filters-button">
                     <button class="filters-button-button">
                         <span class="filters-button-icon">
                             <i class="fas fa-money-bill-wave "></i>
@@ -88,7 +89,7 @@
 
             </div>
             
-            <p class="filters-informations">
+            <p id="filters-informations">
                 <span><i class="fas fa-info"></i></span>
                 Plus de 500 logements sont disponibles dans cette ville
             </p>

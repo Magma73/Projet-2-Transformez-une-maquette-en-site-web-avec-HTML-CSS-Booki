@@ -3,12 +3,12 @@
     margin:0;
     padding:0;
 }
-/* Déclaration initiale box-sizing */
+/* Initialisation box-sizing */
 *{
   box-sizing: border-box;
- /* box-sizing est appliqué à tous les éléments */
 }
 
+/************** GLOBAL *************/
 body{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
@@ -35,9 +35,6 @@ h2{
 h3{
     font-size: 0.8em;
 }
-p{
-    /* margin:5px 0; */
-}
 
 /************** HEADER *************/
 header{
@@ -59,7 +56,7 @@ header{
     width:49%;
     height:auto;
 }
-    /******** Navigation/menu *********/
+    /******** Nav *********/
 #header-nav{
     width:92%;
 }
@@ -89,13 +86,12 @@ header{
 
 /************** SECTION 1 : FORM SEARCH + FILTERS *************/
     /******** Section *********/
-.section-form-search-filters{
+#section-form-search-filters{
     display:flex;
     flex-direction:column;
-    align-items: space-around;
 }
         /******* Form search*******/
-.section-form-search-filters form{
+#section-form-search-filters form{
     margin:15px 0;
     width:40%;
     display:flex;
@@ -143,18 +139,18 @@ i.fa-search{
     display:none;
 }
         /******* Filters*******/
-.filters{
+#filters{
     display:flex;
     flex-flow: row;
     flex-wrap:wrap;
     justify-content: flex-start;
     align-items: center;
 }
-.filters p{
+#filters p{
     font-weight: bold;
     margin-right:40px;
 }
-.filters-button{
+#filters-button{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -198,19 +194,11 @@ i.fa-search{
     border-radius:100%;
     text-align:center;
 }
-
-
-
-
-
             /******* Informations*******/
-                        /******* Paragraph informations*******/
-/* .filters-informations{
-    font-size: 12px;
-} */
-                        /******* Icon informations*******/
+                /******* Icon informations*******/
 .fa-info{
     padding: 10px 15px;
+    margin-right: 10px;
     font-size: 1rem;
     color:#0065FC;
     background-color: white;
@@ -218,7 +206,6 @@ i.fa-search{
     border-radius:30px;
     text-align:center;
 }
-
 
 /************** SECTION 2 : "HÉBERGEMENTS À MARSEILLE" + "LES PLUS POPULAIRES" *************/
     /******** SECTION *********/
@@ -228,7 +215,6 @@ i.fa-search{
     justify-content: space-between;
     margin:1.9% 0;
 }
-
         /******** Section 2.1 : "hébergements à Marseille" *********/
             /******** Section *********/
 #hebergements-marseille{
@@ -266,8 +252,6 @@ i.fa-search{
 }
 .hebergements-marseille-articles-article:hover, .les-plus-populaires-articles-article:hover{
     box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.25);
-    /* transition: all 0.5s ease-out;
-    transform: scale(1.08); */
 }
                 /******* Images*******/
 .hebergements-marseille-articles-article img{
@@ -427,7 +411,7 @@ figure{
     border-radius: 27px;
     box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
 }
-             /******** One card et Two cards *********/
+             /******** One card and Two cards *********/
 .one-card, .two-cards{
     width: 100%;
     flex:100%;
@@ -496,8 +480,6 @@ footer{
 }
 
 
-
-
 /*** MEDIA QUERIES ***/
 @media (max-width: 768px){ /*mobiles */
     /* Header */
@@ -514,20 +496,20 @@ footer{
         main{margin:0;}
 
     /* Section 1 Form search - Filters */
-    .section-form-search-filters{margin:4.5%;}
+        .section-form-search-filters{margin:4.5%;}
 
-    /* Form search */
-        .section-form-search-filters > form {width: 100%;}
-        #form-search-input{flex: 69%;}
-        #form-search-input{overflow:hidden;}
-        i.fa-map-marker-alt{flex: 15.5%;}
-        #form-search-button{display:none;}
-        i.fa-search{flex:15.5%;display:inline-block;text-align:center;color:white;background-color:#0065FC;padding:23px 20px;border-radius:22px;position:relative;right:30px;}
-        
-    /* Filters */
-        #filters{display:flex;flex-direction: column;align-items: flex-start;margin-top:20px;}
+        /* Form search */
+            .section-form-search-filters > form {width: 100%;}
+            #form-search-input{flex: 69%;}
+            #form-search-input{overflow:hidden;}
+            i.fa-map-marker-alt{flex: 15.5%;}
+            #form-search-button{display:none;}
+            i.fa-search{flex:15.5%;display:inline-block;text-align:center;color:white;background-color:#0065FC;padding:23px 20px;border-radius:22px;position:relative;right:30px;}
+            
+        /* Filters */
+            #filters{display:flex;flex-direction: column;align-items: flex-start;margin-top:20px;}
     
-    /* Section 2 Hébergements à Marseille and Le plus populaire*/
+    /* Section 2 Hébergements à Marseille and Les plus populaires*/
         #section-hebergements-populaires{display:flex; flex-direction:column-reverse;}
         #hebergements-marseille, #les-plus-populaires{width:100%;padding:8% 5%;}
         h3{font-size: 0.9em;}
@@ -557,10 +539,11 @@ footer{
 
 
 @media (max-width: 992px){ /*tablettes*/
-    /* Filters */
-        #filters{margin-top:20px;}
+    /* Section 1 Form search - Filters */
+        /* Filters */
+            #filters{margin-top:20px;}
 
-    /* Section 2 Hébergements à Marseille and Le plus populaire*/
+    /* Section 2 Hébergements à Marseille and Les plus populaires*/
         #section-hebergements-populaires{display:flex; flex-direction:column-reverse;}
         #hebergements-marseille, #les-plus-populaires{width:100%;padding:8% 5%;}
         h3{font-size: 0.9em;}
