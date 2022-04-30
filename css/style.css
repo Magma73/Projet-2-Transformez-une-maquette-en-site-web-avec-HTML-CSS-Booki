@@ -84,17 +84,20 @@ header{
     color:#0065FC;
     background-color: white;
 }
-
 /************** SECTION 1 : FORM SEARCH + FILTERS *************/
     /******** Section *********/
 #section-form-search-filters{
     display:flex;
     flex-direction:column;
 }
-        /******* Form search*******/
+        /******* FORM SEARCH *******/
+#div-form{
+    max-width:666px;
+    margin:10px 0;
+}
 #section-form-search-filters form{
-    margin:15px 0;
-    width:40%;
+    width:100%;
+    margin:20px 0;
     display:flex;
     flex-direction:row;
     align-items: center;
@@ -102,14 +105,14 @@ header{
 }
             /**** Icon location ****/
 i.fa-map-marker-alt{
-    flex: 12%;
+    flex: 10%;
     padding:23px;
     text-align:center;
     font-size: 1.2em;
     border-radius:22px 0 0 22px;
     background-color: #F2F2F2;
 }
-            /**** Input : search + submit ****/
+            /**** Inputs : search + submit ****/
 #form-search-input, #form-search-button{
     font-family: "Raleway";
     font-weight: bold;
@@ -117,8 +120,8 @@ i.fa-map-marker-alt{
     border:none;
 }
 #form-search-input{
-    flex: 56%;
-    padding:21px 0px 21px 20px;
+    flex: 60%;
+    padding:21px 0px 21px 17px;
     background-color: white;
     color:black;
     border:solid 2px #F2F2F2;
@@ -129,17 +132,18 @@ i.fa-map-marker-alt{
     color:black;
 }
 #form-search-button{
-    flex: 32%;
+    flex: 30%;
     padding:23px;
     color:white;
     background-color: #0065FC;
     border-radius:0 22px 22px 0;
+    margin:-2px;
 }
             /**** Icon glass ****/
 i.fa-search{
     display:none;
 }
-        /******* Filters*******/
+        /******* FILTERS *******/
 #filters{
     display:flex;
     flex-flow: row;
@@ -497,15 +501,13 @@ footer{
         main{margin:0;}
 
     /* Section 1 Form search - Filters */
-        #section-form-search-filters{margin:4.5%;}
+        #section-form-search-filters{margin:21px 35px;}
 
         /* Form search */
-            #section-form-search-filters > form {width: 100%;}
-            #form-search-input{flex: 69%;}
-            #form-search-input{overflow:hidden;}
-            i.fa-map-marker-alt{flex: 15.5%;}
+            #form-search-input{flex: 76%;font-size: 19px;overflow:hidden;padding:22px 0px 22px 17px;}
+            i.fa-map-marker-alt{flex: 12%;}
             #form-search-button{display:none;}
-            i.fa-search{flex:15.5%;display:inline-block;text-align:center;color:white;background-color:#0065FC;padding:23px 20px;border-radius:22px;position:relative;right:30px;}
+            i.fa-search{margin-left: -20px;flex:12%;display:inline-block;text-align:center;color:white;background-color:#0065FC;padding:24px 20px;border-radius:22px;}
             
         /* Filters */
             #filters{display:flex;flex-direction: column;align-items: flex-start;margin-top:20px;}
