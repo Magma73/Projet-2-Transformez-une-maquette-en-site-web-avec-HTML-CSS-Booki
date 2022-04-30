@@ -93,11 +93,10 @@ header{
         /******* FORM SEARCH *******/
 #div-form{
     max-width:666px;
-    margin:10px 0;
+    margin:20px 0 10px 0;
 }
 #section-form-search-filters form{
     width:100%;
-    margin:20px 0;
     display:flex;
     flex-direction:row;
     align-items: center;
@@ -133,11 +132,11 @@ i.fa-map-marker-alt{
 }
 #form-search-button{
     flex: 30%;
+    margin:-2px;
     padding:23px;
     color:white;
     background-color: #0065FC;
     border-radius:0 22px 22px 0;
-    margin:-2px;
 }
             /**** Icon glass ****/
 i.fa-search{
@@ -145,6 +144,7 @@ i.fa-search{
 }
         /******* FILTERS *******/
 #filters{
+    margin:10px 0;
     display:flex;
     flex-flow: row;
     flex-wrap:wrap;
@@ -156,27 +156,25 @@ i.fa-search{
     margin-right:40px;
 }
 #filters-button{
+    margin:10px 0;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin:20px 0;
 }
             /******* Buttons*******/
 .filters-button-button{
+    margin:10px 0;
+    margin-right:20px;
+    padding-right: 30px;
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    padding-right: 30px;
     font-weight: bold;
     background-color: white;
-    border:none;
     border:solid 3px #F2F2F2;
     border-radius:40px;
     border-left-style: none;
-    align-items: center;
-    margin:10px 0;
-    margin-right:20px;
+    text-align:left;
 } 
 .filters-button-button:hover{
     cursor: pointer;
@@ -185,14 +183,14 @@ i.fa-search{
 }
                 /******* Icons buttons*******/
 .filters-button-icon{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 67px;
     height: 67px;
     margin: -2px;
     margin-right:20px;
     padding:17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 1.5rem;
     color:#0065FC;
     background-color: #DEEBFF;
@@ -200,6 +198,11 @@ i.fa-search{
     text-align:center;
 }
             /******* Informations*******/
+#filters-informations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}      
                 /******* Icon informations*******/
 .fa-info{
     padding: 10px 15px;
@@ -207,7 +210,7 @@ i.fa-search{
     font-size: 1rem;
     color:#0065FC;
     background-color: white;
-    border:1px solid #DEEBFF;
+    border:2px solid #F2F2F2;
     border-radius:30px;
     text-align:center;
 }
