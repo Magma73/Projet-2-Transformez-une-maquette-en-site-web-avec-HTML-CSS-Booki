@@ -464,7 +464,7 @@ footer{
     margin:0!important;
 }
 #footer-container{
-    padding:3% 3.5% 2% 3.5%;
+    padding:58px 60px;
     display:flex;
     flex-direction: row;
 }
@@ -537,11 +537,10 @@ footer{
         .activites-a-marseille-figcaptions-figcaption img, div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1) > div:nth-child(1) > img:nth-child(1),div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(2) > div:nth-child(1) > img:nth-child(1),div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(2) > div:nth-child(1) > img:nth-child(1),div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(1) > div:nth-child(1) > img:nth-child(1){height: 271px;}
         div.activites-a-marseille-figcaptions-figcaption:nth-child(2),div.activites-a-marseille-figcaptions-figcaption:nth-child(3), div.activites-a-marseille-figcaptions-figcaption:nth-child(4), div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1), div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(1) {margin: 0;}
         .one-card, .two-cards{margin:19px 0!important;}
-        /* .one-card figcaption, .two-cards figcaption {padding: 19px 35px;} */
     
     /* Section 4 : Footer */
-        #footer-container{flex-direction: column;padding: 3% 5%;}
-        .footer-div{margin:3% 0;}                 
+        #footer-container{flex-direction: column;padding: 70px 35px 0 35px;}
+        .footer-div{margin:20px 0;}                 
 }
 
 
@@ -565,12 +564,9 @@ footer{
 
     /* Section 3 : Activités à Marseille */
         #section-activites-a-marseille{padding: 19px 35px;}
-        /* #activites-a-marseille-figcaptions{flex-direction:column;}
-        #activites-a-marseille-figcaptions-figcaption{flex-direction:row;} */
     
     /* Section 4 : Footer */
-        #footer-container{padding: 5% 8% 3% 8%;}
-        /* .footer-div{margin:3% 0;}    */
+        #footer-container{padding: 70px 35px 0 35px;}
 }
 
 
