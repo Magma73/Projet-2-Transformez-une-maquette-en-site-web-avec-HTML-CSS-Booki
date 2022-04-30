@@ -387,13 +387,13 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
 #section-activites-a-marseille{
     display: flex;
     flex-direction: column;
-    margin: 2.8% 0;
+    margin: 80px 0;
 }
         /******** Figcaptions *********/
 #activites-a-marseille-figcaptions{
     display: flex;
     flex-direction: row;
-    margin: 3% 0;
+    margin: 36px 0;
 }
 .activites-a-marseille-figcaptions-figcaption{
     flex:20%;
@@ -409,13 +409,17 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
 div.activites-a-marseille-figcaptions-figcaption:nth-child(2),
 div.activites-a-marseille-figcaptions-figcaption:nth-child(3),
 div.activites-a-marseille-figcaptions-figcaption:nth-child(4) {
-    margin-left: 2%;
+    margin-left: 40px;
 }
             /******** Cards *********/
 figure{
     background-color:white;
     border-radius: 27px;
     box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
+}
+figure:hover{
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.25);
+    cursor:pointer;
 }
              /******** One card and Two cards *********/
 .one-card, .two-cards{
@@ -430,7 +434,7 @@ figure{
 }
 .one-card figcaption, .two-cards figcaption {
     flex:5%;
-    padding: 5% 7%;
+    padding: 20px 25px;
 }
              /******** Two cards *********/
 div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1) > div:nth-child(1) > img:nth-child(1),
@@ -443,7 +447,7 @@ div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child
 }
 div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1),
 div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(1) {
-    margin-bottom: 10%;
+    margin-bottom: 58px;
 }
 div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1),
 div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(2) {
@@ -532,8 +536,8 @@ footer{
         #activites-a-marseille-figcaptions{flex-direction:column;}
         .activites-a-marseille-figcaptions-figcaption img, div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1) > div:nth-child(1) > img:nth-child(1),div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(2) > div:nth-child(1) > img:nth-child(1),div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(2) > div:nth-child(1) > img:nth-child(1),div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(1) > div:nth-child(1) > img:nth-child(1){height: 271px;}
         div.activites-a-marseille-figcaptions-figcaption:nth-child(2),div.activites-a-marseille-figcaptions-figcaption:nth-child(3), div.activites-a-marseille-figcaptions-figcaption:nth-child(4), div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1), div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(1) {margin: 0;}
-        .one-card, .two-cards{margin:2.5% 0!important;}
-        .one-card figcaption, .two-cards figcaption {padding: 3% 5%;}
+        .one-card, .two-cards{margin:19px 0!important;}
+        /* .one-card figcaption, .two-cards figcaption {padding: 19px 35px;} */
     
     /* Section 4 : Footer */
         #footer-container{flex-direction: column;padding: 3% 5%;}
@@ -560,7 +564,7 @@ footer{
         #les-plus-populaires{background-color: #F2F2F2;}
 
     /* Section 3 : Activités à Marseille */
-        #section-activites-a-marseille{padding: 3% 5%;}
+        #section-activites-a-marseille{padding: 19px 35px;}
         /* #activites-a-marseille-figcaptions{flex-direction:column;}
         #activites-a-marseille-figcaptions-figcaption{flex-direction:row;} */
     
