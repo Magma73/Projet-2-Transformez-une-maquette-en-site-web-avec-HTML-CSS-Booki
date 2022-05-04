@@ -523,6 +523,7 @@ footer{
     /* Header */
         header{display:flex;flex-direction: column;align-items: center;margin:10px 0;}
         #div-header-logo {justify-content: center;}
+        #div-header-logo > a:nth-child(1) {display: flex;flex-direction: row;justify-content: center;}
         #header-nav {width:100%;}
         #header-nav-ul li {flex: 50%; padding:0}
         .header-nav-li {padding:37px 0px;display: flex;flex-direction:row;justify-content:center;}
