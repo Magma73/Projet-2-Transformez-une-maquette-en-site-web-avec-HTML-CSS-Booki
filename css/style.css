@@ -400,9 +400,9 @@ article.les-plus-populaires-articles-article:nth-child(3) > a:nth-child(1) > div
     display:flex;
     flex-direction: column;
 }
-.activites-a-marseille-figcaptions-figcaption img{
+div.activites-a-marseille-figcaptions-figcaption > a > figure > div > picture > img{
     width:100%;
-    height:100%;
+    /* height:auto; */
     object-fit: cover;
     border-radius: 27px 27px 0 0;
 }
@@ -430,29 +430,28 @@ figure:hover{
 }
 .one-card-img, .two-cards-img{
     width: 100%;
-    flex:95%;
+    /* flex:95%; */
 }
 .one-card figcaption, .two-cards figcaption {
-    flex:5%;
+    /* flex:5%; */
     padding: 20px 25px;
-}
-.activites-a-marseille-figcaptions-figcaption > figure > a {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-   
+}  
+             /******** One cards *********/
+div.activites-a-marseille-figcaptions-figcaption:nth-child(1) > a:nth-child(1) > figure:nth-child(1) > div:nth-child(1) > picture:nth-child(1) > img:nth-child(3),
+div.activites-a-marseille-figcaptions-figcaption:nth-child(3) > a:nth-child(1) > figure:nth-child(1) > div:nth-child(1) > picture:nth-child(1) > img:nth-child(3) {
+    height: 522px;
+}             
              /******** Two cards *********/
-div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1) > div:nth-child(1) > img:nth-child(1),
-div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(2) > div:nth-child(1) > img:nth-child(1) {
+div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > a:nth-child(1) > figure:nth-child(1) > div:nth-child(1) > picture:nth-child(1) > img:nth-child(3),
+div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > a:nth-child(2) > figure:nth-child(1) > div:nth-child(1) > picture:nth-child(1) > img:nth-child(3)  {
     height: 241px;
 }
-div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(2) > div:nth-child(1) > img:nth-child(1),
-div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > a:nth-child(2) > figure:nth-child(1) > div:nth-child(1) > picture:nth-child(1) > img:nth-child(3),
+div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > a:nth-child(1) > figure:nth-child(1) > div:nth-child(1) > picture:nth-child(1) > img:nth-child(3) {
     height: 160px;
 }
-div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1),
-div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(1) {
+div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > a:nth-child(1) > figure:nth-child(1),
+div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > a:nth-child(1) > figure:nth-child(1) {
     margin-bottom: 58px;
 }
 div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1),
@@ -463,6 +462,34 @@ div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child
 div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(1)  {
     flex: 37%;
 }
+
+/***** TEST ******/
+/* #section-activites-a-marseille{
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0;
+}
+#activites-a-marseille-figcaptions{
+    display:flex;
+    flex-direction:row;
+    margin: 36px 0;
+}
+.activites-a-marseille-figcaptions-figcaption{
+    flex:20%;
+    display:flex;
+    flex-direction: column;
+}
+div.activites-a-marseille-figcaptions-figcaption > a > figure > div > picture > img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 27px 27px 0 0;
+} */
+
+
+
+
+
 
 /************** SECTION 4 : FOOTER *************/
 footer{
@@ -540,7 +567,7 @@ footer{
 
     /* Section 3 : Activités à Marseille */
         #activites-a-marseille-figcaptions{flex-direction:column;}
-        .activites-a-marseille-figcaptions-figcaption img, div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1) > div:nth-child(1) > img:nth-child(1),div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(2) > div:nth-child(1) > img:nth-child(1),div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(2) > div:nth-child(1) > img:nth-child(1),div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(1) > div:nth-child(1) > img:nth-child(1){height: 271px;}
+        div.activites-a-marseille-figcaptions-figcaption:nth-child(1) > a:nth-child(1) > figure:nth-child(1) > div:nth-child(1) > picture:nth-child(1) > img:nth-child(3),div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > a:nth-child(1) > figure:nth-child(1) > div:nth-child(1) > picture:nth-child(1) > img:nth-child(3), div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > a:nth-child(2) > figure:nth-child(1) > div:nth-child(1) > picture:nth-child(1) > img:nth-child(3) , div.activites-a-marseille-figcaptions-figcaption:nth-child(3) > a:nth-child(1) > figure:nth-child(1) > div:nth-child(1) > picture:nth-child(1) > img:nth-child(3), div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > a:nth-child(1) > figure:nth-child(1) > div:nth-child(1) > picture:nth-child(1) > img:nth-child(3) , div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > a:nth-child(2) > figure:nth-child(1) > div:nth-child(1) > picture:nth-child(1) > img:nth-child(3){height: 271px;}
         div.activites-a-marseille-figcaptions-figcaption:nth-child(2),div.activites-a-marseille-figcaptions-figcaption:nth-child(3), div.activites-a-marseille-figcaptions-figcaption:nth-child(4), div.activites-a-marseille-figcaptions-figcaption:nth-child(2) > figure:nth-child(1), div.activites-a-marseille-figcaptions-figcaption:nth-child(4) > figure:nth-child(1) {margin: 0;}
         .one-card, .two-cards{margin:19px 0!important;}
     
