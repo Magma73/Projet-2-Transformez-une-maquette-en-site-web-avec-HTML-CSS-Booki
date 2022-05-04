@@ -7,7 +7,6 @@
 *{
   box-sizing: border-box;
 }
-
 /************** GLOBAL *************/
 body{
     font-family: 'Raleway', sans-serif;
@@ -30,13 +29,10 @@ h1{
 }
 h2{
     font-size: 1.2em;
-    /* margin: 0 0 1.3% 1.7%; */
 }
 h3{
     font-size: 0.8em;
 }
-
-
 /************** HEADER *************/
 header{
     display:flex;
@@ -236,12 +232,8 @@ i.fa-search{
     border-radius: 26px;
     margin-right:45px;
 }
-/* #hebergements-marseille-title-h2 {
-    margin-bottom: 0.6%;
-} */
             /******* Articles*******/
 #hebergements-marseille-articles{
-    /* width: 100%; */
     margin: 30px 0;
     display: flex;
     flex-direction: row;
@@ -517,7 +509,6 @@ footer{
     margin: 8px 0;
 }
 
-
 /*** MEDIA QUERIES ***/
 @media (max-width: 768px){ /*mobiles */
     /* Header */
@@ -574,7 +565,6 @@ footer{
         .footer-div{margin:20px 0;}                 
 }
 
-
 @media (max-width: 992px){ /*tablettes*/
     /* Section 1 Form search - Filters */
         /* Filters */
@@ -603,7 +593,3 @@ footer{
     /* Section 4 : Footer */
         #footer-container{padding: 70px 35px 0 35px;}
 }
-
-
-
-
