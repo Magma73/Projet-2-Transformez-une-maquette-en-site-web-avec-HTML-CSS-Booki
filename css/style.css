@@ -561,7 +561,7 @@ footer{
         figure{margin:19px 0!important;}
     
     /* Section 4 : Footer */
-        #footer-container{flex-direction: column;padding: 70px 35px 0 35px;}
+        #footer-container{flex-direction: column;padding: 70px 35px 0 35px!important;}
         .footer-div{margin:20px 0;}                 
 }
 
