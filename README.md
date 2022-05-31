@@ -47,7 +47,7 @@ En fait, le but du prototype est de pouvoir valider le design et, par la suite, 
 * Compatibilité : Dernières versions de Chrome et Firefox
 
 
-Voire les spécificités techniques et fonctionnelles demandées : ![Note de synthèse Booki ](/assets/note_synthese_booki.pdf)
+Voir les spécificités techniques et fonctionnelles demandées : ![Note de synthèse Booki ](/assets/note_synthese_booki.pdf)
 
 
 ## Tester le projet
