@@ -11,43 +11,43 @@ En fait, le but du prototype est de pouvoir valider le design et, par la suite, 
 
 
 ## Technologies utilisées
-* VS Code : HTML et CSS
+* VS Code : HTML5 et CSS3
 * Flexbox
 * Github
 
 
-## Maquettes à intégrer
+## Maquette à intégrer
 ![Maquette Booki](/assets/maquette_Booki.png)
 
 
-## Notes
+## Note
 
 **Police et icônes :**
 
-    * Police : [Raleway](https://fonts.google.com/specimen/Raleway)
-    * Icônes : [FontAwesome](https://fontawesome.com/)
+* Police : [Raleway](https://fonts.google.com/specimen/Raleway)
+* Icônes : [FontAwesome](https://fontawesome.com/)
 
 **Couleurs :**
 
-    * Primaire: #0065FC 
-    * Secondaire: #DEEBFF
-    * Tertiaire: #F2F2F2
+* Primaire: #0065FC 
+* Secondaire: #DEEBFF
+* Tertiaire: #F2F2F2
 
 **Contraintes :**
 
-    * Langages à utiliser : HTML5 et CSS3
-    * Frameworks autorisés : non
-    * Approche : desktop first
-    * Maquette desktop : oui
-    * Maquette tablette : à improviser
-    * Maquette mobile : oui
-    * Breakpoints : 992 px pour les écrans d’ordinateurs et 768 px pour les tablettes, et tout ce qui est en dessous de 768 pour les téléphones portables
-    * Validation W3C HTML : à passer, warning autorisés
-    * Validation W3C CSS : à passer, warning autorisés
-    * Compatibilité : Dernières versions de Chrome et Firefox
+* Langages à utiliser : HTML5 et CSS3
+* Frameworks autorisés : non
+* Approche : desktop first
+* Maquette desktop : oui
+* Maquette tablette : à improviser
+* Maquette mobile : oui
+* Breakpoints : 992 px pour les écrans d’ordinateurs et 768 px pour les tablettes, et tout ce qui est en dessous de 768 pour les téléphones portables
+* Validation W3C HTML : à passer, warning autorisés
+* Validation W3C CSS : à passer, warning autorisés
+* Compatibilité : Dernières versions de Chrome et Firefox
 
 
-Spécificités techniques et fonctionnelles demandées : ![Note de synthèse Booki ](/assets/note_synthese_booki.pdf)
+Voire les spécificités techniques et fonctionnelles demandées : ![Note de synthèse Booki ](/assets/note_synthese_booki.pdf)
 
 
 ## Tester le projet
